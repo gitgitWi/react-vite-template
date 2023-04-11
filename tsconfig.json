@@ -10,28 +10,27 @@
     "removeComments": true,
     "newLine": "lf",
     "isolatedModules": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "noEmit": true,
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
       "@/*": ["./*"],
       "@features/*": ["./features/*"],
-      "@app/*": ["./app/*"]
+      "@pages/*": ["./pages/*"],
+      "@styles/*": ["./styles/*"]
     },
     "plugins": [
       {
-        "name": "next"
-      },
-      {
         "name": "typescript-plugin-css-modules"
       }
-    ]
+    ],
+    "types": ["vite/client"]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "app", "features"],
-  "exclude": ["node_modules"]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

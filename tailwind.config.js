@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./(app|features)/**/*.tsx'],
+const configs = {
+  content: ['index.html', './src/**/*.tsx'],
   theme: {
     extend: {},
   },
+  experimental: { optimizeUniversalDefaults: true },
   plugins: [],
 };
+
+module.exports = configs;

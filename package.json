@@ -1,58 +1,77 @@
 {
-  "name": "nextjs-template",
+  "name": "react-vite-template",
   "version": "1.0.0",
   "author": {
     "name": "위정훈 (gitgitWi)",
     "email": "rs1kflvx@duck.com"
   },
-  "readme": "https://github.com/gitgitWi/nextjs-teamplate/blob/main/README.md",
-  "qna": "https://github.com/gitgitWi/nextjs-teamplate/discussions",
+  "readme": "https://github.com/gitgitWi/react-vite-template/blob/main/README.md",
+  "qna": "https://github.com/gitgitWi/react-vite-template/discussions",
   "keywords": [
-    "nextjs",
+    "react",
+    "vite",
     "typescript",
     "pnpm",
     "react-query",
-    "tailwindcss"
+    "tailwindcss",
+    "storybook"
   ],
   "license": "MIT",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "dev": "next dev",
-    "build-and-start": "next build && next start",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "dev": "vite --open",
+    "build-and-start": "pnpm build && pnpm start",
+    "build": "tsc && vite build",
+    "start": "vite preview",
     "format": "prettier --write ./ --config .prettierrc",
     "clean": "clean:build && rm -rf node_modules",
-    "clean:build": "rm -rf .next",
+    "clean:build": "rm -rf dist && rm -rf node_modules/.vite",
     "preinstall": "corepack enable && corepack prepare pnpm@latest --activate && npx only-allow pnpm",
-    "prebuild": "npx only-allow pnpm"
-  },
-  "devDependencies": {
-    "typescript-plugin-css-modules": "^5.0.0"
+    "prebuild": "npx only-allow pnpm",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@lukemorales/query-key-factory": "^1.2.0",
     "@tanstack/react-query": "^4.28.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
+    "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.36.0",
-    "eslint-config-next": "^13.3.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "next": "^13.3.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "ky": "^0.33.3",
     "postcss": "^8.4.21",
     "prettier": "^2.8.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
     "sass": "^1.61.0",
     "tailwindcss": "^3.3.1",
     "typescript": "^5.0.2",
+    "vite": "^4.2.1",
     "zustand": "^4.3.7"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.2",
+    "@storybook/addon-interactions": "^7.0.2",
+    "@storybook/addon-links": "^7.0.2",
+    "@storybook/blocks": "^7.0.2",
+    "@storybook/react": "^7.0.2",
+    "@storybook/react-vite": "^7.0.2",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "eslint-plugin-storybook": "^0.6.11",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.2",
+    "typescript-plugin-css-modules": "^5.0.0"
   }
 }

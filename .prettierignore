@@ -1,13 +1,12 @@
 node_modules
 .pnpm-store
 
-.next
 out
 dist
 build
 *.tsbuildinfo
 
-next-env.d.ts
+vite-env.d.ts
 
 .devcontainer
 .vscode

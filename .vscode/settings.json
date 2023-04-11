@@ -27,5 +27,13 @@
   },
   "cSpell.words": [
     "lukemorales"
-  ]
+  ],
+  "intellicodeCompletions.language.typescript": true,
+  "intellicodeCompletions.language.python": false,
+  "intellicodeCompletions.language.javascript": true,
+  "intellicodeApiExamples.python.enabled": false,
+  "vsintellicode.features.python.deepLearning": "disabled",
+  "vsintellicode.java.completionsEnabled": false,
+  "vsintellicode.python.completionsEnabled": false,
+  "vsintellicode.sql.completionsEnabled": true
 }

@@ -41,10 +41,7 @@ node_modules
 # .env
 # .env*.local
 
-# Next.js
-next-env.d.ts
-.next
-out
+dist
 
 # Serverless directories
 .serverless/

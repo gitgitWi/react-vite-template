@@ -1,7 +1,10 @@
+import { ReactQueryClientProvider } from '@features/providers/react-query';
+import { ReactRouterProvider } from '@features/providers/react-router-dom';
+
 export function App() {
   return (
-    <main className="flex flex-col items-center justify-center w-full">
-      <h1>App.tsx</h1>
-    </main>
+    <ReactQueryClientProvider>
+      <ReactRouterProvider />
+    </ReactQueryClientProvider>
   );
 }

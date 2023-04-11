@@ -1,0 +1,23 @@
+{
+  "name": "Dev Container for Node.js",
+  "context": "..",
+  "dockerFile": "./dev.Dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "streetsidesoftware.code-spell-checker",
+        "kisstkondoros.vscode-codemetrics",
+        "mhutchie.git-graph",
+        "GitHub.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "wix.vscode-import-cost",
+        "christian-kohler.path-intellisense",
+        "ms-edgedevtools.vscode-edge-devtools",
+        "WakaTime.vscode-wakatime"
+      ]
+    }
+  },
+  "postStartCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install"
+}

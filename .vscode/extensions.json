@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "zixuanchen.vitest-explorer",
+    "mrmlnc.vscode-scss",
+    "gencer.html-slim-scss-css-class-completion",
+    "jacano.vscode-pnpm",
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "visualstudioexptteam.vscodeintellicode-completions",
+    "evondev.indent-rainbow-palettes",
+    "igorsbitnev.error-gutters",
+    "wallabyjs.console-ninja",
+    "naumovs.color-highlight",
+    "adpyke.codesnap",
+    "editorconfig.editorconfig",
+    "bradlc.vscode-tailwindcss",
+    "heybourn.headwind",
+    "mutantdino.resourcemonitor",
+  ]
+}

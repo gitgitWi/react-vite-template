@@ -1,0 +1,58 @@
+{
+  "name": "nextjs-template",
+  "version": "1.0.0",
+  "author": {
+    "name": "위정훈 (gitgitWi)",
+    "email": "rs1kflvx@duck.com"
+  },
+  "readme": "https://github.com/gitgitWi/nextjs-teamplate/blob/main/README.md",
+  "qna": "https://github.com/gitgitWi/nextjs-teamplate/discussions",
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "pnpm",
+    "react-query",
+    "tailwindcss"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build-and-start": "next build && next start",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ./ --config .prettierrc",
+    "clean": "clean:build && rm -rf node_modules",
+    "clean:build": "rm -rf .next",
+    "preinstall": "corepack enable && corepack prepare pnpm@latest --activate && npx only-allow pnpm",
+    "prebuild": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "typescript-plugin-css-modules": "^5.0.0"
+  },
+  "dependencies": {
+    "@lukemorales/query-key-factory": "^1.2.0",
+    "@tanstack/react-query": "^4.28.0",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.33",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-config-next": "^13.3.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "next": "^13.3.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.61.0",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.0.2",
+    "zustand": "^4.3.7"
+  }
+}

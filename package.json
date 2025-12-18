@@ -73,7 +73,7 @@
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "eslint-plugin-storybook": "^0.6.11",
     "prop-types": "^15.8.1",
-    "storybook": "^7.0.2",
+    "storybook": "^7.6.21",
     "typescript-plugin-css-modules": "^5.0.0"
   }
 }
